@@ -1,8 +1,19 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from api import chat, upload, embedding, setting
-from config import temp_file_path, frontend_file_path
+from config import *
+
+
+# 创建路径
+if not os.path.exists(temp_file_path):
+    os.mkdir(temp_file_path)
+if not os.path.exists(vector_cache_path):
+    os.mkdir(vector_cache_path)
+if not os.path.exists(history_docs_path):
+    os.mkdir(history_docs_path)
 
 
 app = FastAPI()

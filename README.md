@@ -4,16 +4,6 @@
 
 ---
 
-## ✨ 功能亮点
-
-- 📄 支持 PDF 预览 + 文本缩放
-- 🧠 支持基于文档内容的向量检索问答（RAG）
-- 💬 支持聊天式对话
-- 💾 支持文档上传、历史记录管理
-- ⚙️ 支持 API 密钥设置、自定义模型接入
-
----
-
 ## 🧱 技术栈
 
 - 后端：FastAPI + LangChain + LangGraph
@@ -27,5 +17,61 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/your-name/docqa.git
-cd docqa
+git clone https://github.com/1742/DocQA.git
+cd DocQA
+```
+
+### 2. 安装依赖
+
+```bash
+cd backend
+conda activate your_venv
+pip install -r requirements.txt
+```
+
+### 3. 构建前端项目
+
+```bash
+cd frontend
+npm install
+npm run build
+```
+
+运行后端：
+```bash
+uvicorn main:app --reload
+```
+
+访问地址`http://127.0.0.1:8000/frontend`即可使用
+
+目前只写了2、3个模型支持：
+#### Embedding Model
+<ul>
+  <li>openai text-embedding-ada-002</li>
+  <li>llama3</li>
+</ul>
+其中llama3需要在本地使用ollma部署，启动ollma后即可使用。
+
+#### LLM
+<ul>
+  <li>gpt-3.5-turbo</li>
+  <li>gpt-4</li>
+  <li>DeepSeek-V3</li>
+</ul>
+
+---
+
+## 📁 项目结构
+<ul>
+  <li><code>/backend</code>：FastAPI 接口服务、LangChain 逻辑</li>
+  <li><code>/frontend</code>：前端界面（Next.js + Tailwind）</li>
+  <li><code>/Temp</code>：PDF 缓存路径</li>
+  <li><code>/vector_cache_path</code>：向量缓存路径</li>
+  <li><code>/history</code>：历史文档聊天记录</li>
+</ul>
+
+---
+
+## 后续计划
+
+优化RAG效果
