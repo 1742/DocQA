@@ -48,9 +48,9 @@ uvicorn main:app --reload
 #### Embedding Model
 <ul>
   <li>openai text-embedding-ada-002</li>
-  <li>llama</li>
+  <li>llama3</li>
 </ul>
-其中llama需要在本地使用ollma部署，启动ollma后即可使用。
+其中llama3需要在本地使用ollma部署，启动ollma后即可使用。
 
 #### LLM
 <ul>
