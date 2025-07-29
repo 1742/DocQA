@@ -48,7 +48,7 @@ npm run build
 ```
 
 运行后端：
-```anaconda
+```bash
 uvicorn main:app --reload
 ```
 
@@ -58,11 +58,11 @@ uvicorn main:app --reload
 
 ## 📁 项目结构
 <ul>
-  <li>`/backend`：FastAPI 接口服务、LangChain 逻辑</li>
-  <li>`/frontend`：前端界面（Next.js + Tailwind）</li>
-  <li>`/Temp`：PDF 缓存路径</li>
-  <li>`/vector_cache_path`：向量缓存路径</li>
-  <li>`/history`：历史文档聊天记录</li>
+  <li><code>/backend</code>：FastAPI 接口服务、LangChain 逻辑</li>
+  <li><code>/frontend</code>：前端界面（Next.js + Tailwind）</li>
+  <li><code>/Temp</code>：PDF 缓存路径</li>
+  <li><code>/vector_cache_path</code>：向量缓存路径</li>
+  <li><code>/history</code>：历史文档聊天记录</li>
 </ul>
 
 ---
