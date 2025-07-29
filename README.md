@@ -33,7 +33,7 @@ cd DocQA
 
 ### 2. 安装依赖
 
-```anaconda
+```bash
 cd backend
 conda activate your_venv
 pip install -r requirements.txt
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ### 3. 构建前端项目
 
 ```bash
-cd ../frontend
+cd frontend
 npm install
 npm run build
 ```
