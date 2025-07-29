@@ -27,5 +27,25 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/your-name/docqa.git
-cd docqa
+git clone https://github.com/1742/DocQA.git
+cd DocQA
+
+### 2. 安装依赖
+
+```anaconda
+cd backend
+conda activate your_venv
+pip install -r requirements.txt
+
+### 3. 构建前端项目
+
+```bash
+cd ../frontend
+npm install
+npm run build
+
+运行后端：
+```anaconda
+uvicorn main:app --reload
+
+访问地址`http://127.0.0.1:8000/frontend`即可使用
