@@ -53,3 +53,20 @@ uvicorn main:app --reload
 ```
 
 访问地址`http://127.0.0.1:8000/frontend`即可使用
+
+---
+
+## 📁 项目结构
+<ul>
+  <li>`/backend`：FastAPI 接口服务、LangChain 逻辑</li>
+  <li>`/frontend`：前端界面（Next.js + Tailwind）</li>
+  <li>`/Temp`：PDF 缓存路径</li>
+  <li>`/vector_cache_path`：向量缓存路径</li>
+  <li>`/history`：历史文档聊天记录</li>
+</ul>
+
+---
+
+## 后续计划
+
+优化RAG效果
