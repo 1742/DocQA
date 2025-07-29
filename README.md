@@ -44,6 +44,21 @@ uvicorn main:app --reload
 
 访问地址`http://127.0.0.1:8000/frontend`即可使用
 
+目前只写了2、3个模型支持：
+#### Embedding Model
+<ul>
+  <li>openai text-embedding-ada-002</li>
+  <li>llama</li>
+</ul>
+其中llama需要在本地使用ollma部署，启动ollma后即可使用。
+
+#### LLM
+<ul>
+  <li>gpt-3.5-turbo</li>
+  <li>gpt-4</li>
+  <li>DeepSeek-V3</li>
+</ul>
+
 ---
 
 ## 📁 项目结构
